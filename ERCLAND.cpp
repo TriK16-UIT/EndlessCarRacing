@@ -2,12 +2,12 @@
 
 ERCLAND::ERCLAND()
 {
-	Texture = &ERCASSETS::GetInstance().TextureList["MAP"];
+	Texture = &ERCASSETS::getInstance().TextureList["MAP"];
 	Sprite.setTexture(*Texture);
-	Sprite.setScale(2.3, 2);
+	Sprite.setScale(2.3f, 2.f);
 	Sprite.setPosition(0, 0);
 	SpriteNext.setTexture(*Texture);
-	SpriteNext.setScale(2.3, 2);
+	SpriteNext.setScale(2.3f, 2.f);
 	SpriteNext.setPosition(0, 0 - Sprite.getGlobalBounds().height);
 	landfactory.push_back(Sprite);
 	landfactory.push_back(SpriteNext);

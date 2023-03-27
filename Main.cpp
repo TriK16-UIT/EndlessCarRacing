@@ -1,7 +1,7 @@
-#include"ERCGAME.h"
+#include "ERCGAME.h"
 
 int main()
 {
-	ERCGAME game;
-	game.run();
+	ERCGAME Game;
+	Game.run();
 }
